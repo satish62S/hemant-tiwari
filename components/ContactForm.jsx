@@ -31,7 +31,7 @@ export default function ContactForm() {
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
-      className="bg-white/5 p-8 md:p-16 rounded-[2.5rem] border border-white/10 backdrop-blur-2xl shadow-2xl mt-0 lg:mt-8"
+      className="bg-white/5 p-8 md:p-16 items-center rounded-[2.5rem] border border-white/10 backdrop-blur-2xl shadow-2xl mt-0 lg:mt-8"
     >
       <form onSubmit={handleSubmit} className="space-y-8">
         <div className="space-y-2">
@@ -80,6 +80,7 @@ export default function ContactForm() {
           Send Message via WhatsApp
         </button>
       </form>
+      <h3 className="text-center mt-8 text-white/60 font-light italic border-l-2 border-white/20 pl-6 max-w-md">Let us work together to create magic.</h3>
     </motion.div>
   );
 }

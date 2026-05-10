@@ -83,7 +83,7 @@ you know what pictues speaks louder than words.
             transition={{ delay: 0.3 }}
             className="mt-10"
           >
-             <a href="#gallery" className="inline-flex items-center gap-4 text-sm uppercase tracking-widest text-white border-b border-white/20 pb-2 hover:border-white transition-all group">
+             <a href="#about" className="inline-flex items-center gap-4 text-sm uppercase tracking-widest text-white border-b border-white/20 pb-2 hover:border-white transition-all group">
                 View Portfolio
                 <span className="group-hover:translate-x-2 transition-transform">→</span>
              </a>
