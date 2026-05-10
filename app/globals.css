@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-dark: #050505;
+  --color-brand-light: #fafafa;
+  
+  /* Ethereal Palette */
+  --ethereal-bg: #FAFAFA;
+  --ethereal-text: #050505;
+  --ethereal-sub: #717171;
+
+  /* Grounded Palette */
+  --grounded-bg: #12140E;
+  --grounded-text: #E8E9E4;
+  --grounded-sub: #A3A69C;
+
+  /* Sage & Stone Palette */
+  --sage-bg: #4A5D4E;
+  --sage-stone: #D1D5D2;
+  --sage-text: #F1F3F0;
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer utilities {
+  .ethereal {
+    background-color: var(--ethereal-bg);
+    color: var(--ethereal-text);
+  }
+  .grounded {
+    background-color: var(--grounded-bg);
+    color: var(--grounded-text);
+  }
+  .sage-stone {
+    background-color: var(--sage-bg);
+    color: var(--sage-text);
+  }
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    max-width: 1400px;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  --background: #121212;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ensure images have a default high-end look */
+img {
+  user-select: none;
+}
